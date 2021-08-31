@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-cp .vimrc "$HOME"/.vimrc
+me=$(dirname "${BASH_SOURCE[0]}")
+cp "${me}"/.vimrc "$HOME"/.vimrc
