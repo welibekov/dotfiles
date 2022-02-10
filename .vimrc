@@ -10,7 +10,7 @@ set showmatch
 let g:syntastic_enable_signs=1
 let b:shell = 'bash'
 syntax on
-colorscheme elflord
+"colorscheme elflord
 
 " go-vim features starts here
 filetype plugin indent on
@@ -64,3 +64,7 @@ packloadall
 " Load all of the helptags now, after plugins have been loaded.
 " All messages and errors will be ignored.
 silent! helptags ALL
+
+" gruvbox
+autocmd vimenter * ++nested colorscheme gruvbox
+set background=dark    " Setting dark mode
