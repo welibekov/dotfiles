@@ -5,3 +5,4 @@ git clone https://github.com/fatih/vim-go.git "$HOME"/.vim/pack/plugins/start/vi
 
 me=$(dirname "${BASH_SOURCE[0]}")
 cp "${me}"/.vimrc "$HOME"/.vimrc
+vim -c ":GoInstallBinaries" -c ":x"
