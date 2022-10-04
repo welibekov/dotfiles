@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -x 
+
 # install go-vim
 plugins=$HOME/.vim/pack/plugins/start
 default=$HOME/.vim/pack/default/start
