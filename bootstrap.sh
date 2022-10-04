@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
 # install go-vim
-git clone https://github.com/fatih/vim-go.git "$HOME"/.vim/pack/plugins/start/vim-go
-git clone https://github.com/morhetz/gruvbox.git ~/.vim/pack/default/start/gruvbox
+plugins=$HOME/.vim/pack/plugins/start
+default=$HOME/.vim/pack/default/start
+
+[[ -d $plugins/vim-go ]] || git clone https://github.com/fatih/vim-go.git "$plugins"/vim-go
+[[ -d $default/gruvbox ]] || git clone https://github.com/morhetz/gruvbox.git "$default"/gruvbox
 
 me=$(dirname "${BASH_SOURCE[0]}")
 cp "${me}"/.vimrc "$HOME"/.vimrc
