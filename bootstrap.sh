@@ -11,4 +11,4 @@ default=$HOME/.vim/pack/default/start
 
 me=$(dirname "${BASH_SOURCE[0]}")
 cp "${me}"/.vimrc "$HOME"/.vimrc
-vim -c ":GoInstallBinaries" -c ":x"
+#vim -c ":GoInstallBinaries" -c ":x"
