@@ -69,3 +69,12 @@ silent! helptags ALL
 " gruvbox
 autocmd vimenter * ++nested colorscheme gruvbox
 set background=dark    " Setting dark mode
+
+" Find references/callers of the symbol under the cursor
+autocmd FileType go nmap <leader>r <Plug>(go-referrers)
+
+" Find who calls the function under the cursor
+autocmd FileType go nmap <leader>c <Plug>(go-callers)
+
+" Show type information for the symbol under the cursor
+autocmd FileType go nmap <leader>i <Plug>(go-info)
