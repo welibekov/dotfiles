@@ -7,6 +7,7 @@ set expandtab
 set showmode
 set showcmd
 set showmatch
+set splitbelow
 let g:syntastic_enable_signs=1
 let b:shell = 'bash'
 syntax on
